@@ -1,3 +1,5 @@
+
+
 var electron = require('electron');
 var BrowserWindow = electron.BrowserWindow;
 var app = electron.app;
@@ -6,9 +8,12 @@ app.on('ready', function () {
     var appWindow;
     var infoWindow;
 appWindow = new BrowserWindow({show: false});
-appWindow.loadURL('file://' + __dirname + '/bootstrap.html');
+appWindow.loadURL('file://' + __dirname + '/test.html');
 
 infoWindow = new BrowserWindow({
+   
+    
+    
     width:400, 
     height:300,
     frame: false,
@@ -24,3 +29,4 @@ appWindow.once('ready-to-show', function(){
     },2000)
 });
 })
+ 
