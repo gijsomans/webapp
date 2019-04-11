@@ -8,7 +8,7 @@ app.on('ready', function () {
     var appWindow;
     var infoWindow;
 appWindow = new BrowserWindow({show: false});
-appWindow.loadURL('file://' + __dirname + '/test.html');
+appWindow.loadURL('file://' + __dirname + '/bootstrap.html');
 
 infoWindow = new BrowserWindow({
    
