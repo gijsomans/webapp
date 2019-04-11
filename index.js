@@ -19,14 +19,9 @@ infoWindow = new BrowserWindow({
     frame: false,
     show: false
 })
-infoWindow.loadURL('file://' + __dirname + '/info.html');
 
 appWindow.once('ready-to-show', function(){
     appWindow.show();
-    infoWindow.show();
-    setTimeout(function(){
-        infoWindow.hide();
-    },2000)
 });
 })
  

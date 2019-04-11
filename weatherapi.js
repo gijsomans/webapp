@@ -6,6 +6,6 @@ function(data){
     var place = data.name;
     var temp = data.main.temp;
     document.getElementById("place").innerHTML = "Weather in " + place;
-    document.getElementById("temp").innerHTML = "Temputre is " + temp
+    document.getElementById("temp").innerHTML = "Temputre is " + temp + "°С"
 });
 
